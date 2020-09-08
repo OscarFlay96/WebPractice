@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns="http://www.owl-ontologies.com/Ontology1481986676.owl#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xml:base="http://www.owl-ontologies.com/Ontology1481986676.owl">
+  <owl:Ontology rdf:about="">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >&lt;p style="margin-top: 0"&gt;&#xD;
+      Esto es un comentario de prueba en OWL&#xD;
+    &lt;/p&gt;</rdfs:comment>
+  </owl:Ontology>
+  <owl:Class rdf:ID="Artículo">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Periodico"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:ObjectProperty rdf:ID="inverse_of_EscribeUn">
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="EscribeUn"/>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#EscribeUn">
+    <owl:inverseOf rdf:resource="#inverse_of_EscribeUn"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:ID="DirigeUn">
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Periodico"/>
+    <rdfs:range>
+      <owl:DataRange>
+        <owl:oneOf rdf:parseType="Resource">
+          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+          <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+          >Periodico</rdf:first>
+        </owl:oneOf>
+      </owl:DataRange>
+    </rdfs:range>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="annotationProperty_3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </owl:DatatypeProperty>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+    <rdfs:comment xml:lang="es">&lt;p style="margin-top: 0"&gt;&#xD;
+      La superclase a la que pertenecen todos los individuos.&#xD;
+    &lt;/p&gt;</rdfs:comment>
+    <rdfs:label xml:lang="es">Periodico</rdfs:label>
+  </rdf:Description>
+  <owl:Periodico rdf:ID="Director">
+    <DirigeUn rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Periodico</DirigeUn>
+  </owl:Periodico>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.5, Build 663)  http://protege.stanford.edu -->

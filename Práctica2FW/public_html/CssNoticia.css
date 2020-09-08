@@ -1,0 +1,38 @@
+/*
+
+    Created on : 12-nov-2016, 17:42:42
+    Author     : Oscar y Villa
+*/
+html,
+body{
+    background-image: url("background-1.jpg");
+    background-position: left top;
+    background-attachment: fixed;
+    padding: 25px;
+}
+video{
+    float: left;
+    padding: 12px;
+}
+h1{
+    border-style: outset;
+    text-align: center;
+    background-color: white;
+    font-family: "Times new roman", Times, serif;
+    font-size: 40px;
+}
+
+#uno{
+    text-align: justify;
+   
+    
+}
+#dos{
+    width: 50%;
+    text-align: justify;
+    float: left;
+    padding-right:  5%;
+}
+#tres{
+    text-align: justify;
+}

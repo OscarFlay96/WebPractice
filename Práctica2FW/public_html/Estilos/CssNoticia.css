@@ -1,0 +1,41 @@
+/*
+
+    Created on : 12-nov-2016, 17:42:42
+    Author     : Oscar y Villa
+*/
+html
+*{
+    margin: 1%;
+}
+body{
+    background-image: url("background-1.jpg");
+    background-position: left top;
+    background-attachment: fixed;
+}
+video{
+    padding-left: 25%;
+}
+h1{
+    border-style: outset;
+    text-align: center;
+    background-color: white;
+    font-family: "Times new roman", Times, serif;
+    font-size: 40px;
+}
+h2{
+    text-align: center;
+    font-family: "Times new roman", Times, serif;
+    font-size: 30px;
+}
+p{
+    font-family: sans-serif;
+    border: solid#666600;
+    text-align: justify;
+    -webkit-column-count: 2;/* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+   
+}
+q{
+    text-decoration: underline
+}
